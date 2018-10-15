@@ -1,0 +1,18 @@
+PODS:
+  - Alamofire (4.7.0)
+  - HandyJSON (4.0.0-beta.1)
+  - Kingfisher (4.6.4)
+
+DEPENDENCIES:
+  - Alamofire
+  - HandyJSON (= 4.0.0-beta.1)
+  - Kingfisher
+
+SPEC CHECKSUMS:
+  Alamofire: 907e0a98eb68cdb7f9d1f541a563d6ac5dc77b25
+  HandyJSON: 428bb18e2c34c2a77361accebf90cf64e4f74118
+  Kingfisher: 68498a706e46c2a050b0c9572f100e5db407f6e0
+
+PODFILE CHECKSUM: b094ee3a2370e94eda9372dd4f4421f37cc432e6
+
+COCOAPODS: 1.4.0

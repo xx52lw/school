@@ -1,0 +1,81 @@
+//
+//  LWImage+LW.swift
+//  Loter-swift
+//
+//  Created by 张星星 on 2018/3/30.
+//  Copyright © 2018年 LW. All rights reserved.
+//
+
+import UIKit
+import Foundation
+import UIKit
+import Kingfisher
+
+extension UIImage {
+    ///  对Kingfisher的再次封装
+    class func imageUrlAndPlaceImage(imageView : UIImageView , stringUrl : String? , placeholdImage : UIImage, completionHandler: CompletionHandler? = nil) {
+        var urlString = stringUrl
+        if  urlString == nil {
+            urlString = ""
+        }
+        let url = URL(string : urlString!)
+        imageView.kf.setImage(with: url, placeholder: placeholdImage, options: nil, progressBlock: nil, completionHandler: completionHandler)
+    }
+    
+    /// 从bundle文件夹里面获取图片
+    class func imageFromeBundleFile(fileName : String, imageName : String) -> UIImage {
+        let name = fileName + "/" + imageName
+        return imageFromBundle(imageName: name)
+    }
+    /// 从bundle获取图片
+    class func imageFromBundle(imageName: String) -> UIImage {
+        let scale = NSInteger(UIScreen.main.scale)
+        var name = "imageResources.bundle/\(imageName)@\(scale)x.png"
+        var path = Bundle.main.path(forResource: name, ofType: nil)
+        if path == nil {
+            name = "imageResources.bundle/\(imageName)@2x.png"
+            path = Bundle.main.path(forResource: name, ofType: nil)
+            if path == nil {
+                name = "imageResources.bundle/\(imageName).png"
+                path = Bundle.main.path(forResource: name, ofType: nil)
+                if path == nil {
+                    name = "imageResources.bundle"
+                    path = Bundle.main.path(forResource: name, ofType: nil)
+                }
+            }
+        }
+        let image = UIImage(contentsOfFile : path!)
+        if (image != nil)  {
+            return image!
+        }
+        return UIImage()
+    }
+    ///  根据图片,返回一个拉伸后的图片
+    class func imageStretchableImageName(imageName: String) -> UIImage {
+        let image = UIImage(named: imageName)!
+        let width = NSInteger(image.size.width * 0.5)
+        let height = NSInteger(image.size.height * 0.5)
+        return image.stretchableImage(withLeftCapWidth: width, topCapHeight: height)
+    }
+    /// 获取颜色图片
+    class func imageDrawWithColor(color : UIColor, size : CGSize) -> UIImage? {
+        let rect = CGRect.init(x: 0.0, y: 0.0, width: size.width, height: size.height)
+        UIGraphicsBeginImageContext(size)
+        let context = UIGraphicsGetCurrentContext()
+        context?.setFillColor(color.cgColor)
+        context?.fill(rect)
+        let colorImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return colorImage
+    }
+    ///
+    class func imageMarginImage(size: CGSize , origionImage : UIImage) -> UIImage? {
+        UIGraphicsBeginImageContext(size)
+        let imageRect = CGRect.init(x: (size.width - origionImage.size.width) / 2, y: (size.height - origionImage.size.height) / 2, width: origionImage.size.width, height: origionImage.size.height)
+        origionImage.draw(in: imageRect)
+        let newImage = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        return newImage
+        
+    }
+}

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>classString</key>
+		<string>LWHomeViewController</string>
+		<key>titleString</key>
+		<string>首页</string>
+		<key>imageName</key>
+		<string>tab_home</string>
+		<key>showType</key>
+		<string>1</string>
+	</dict>
+	<dict>
+		<key>classString</key>
+		<string>LWPlazaCirclePage</string>
+		<key>titleString</key>
+		<string>商圈</string>
+		<key>imageName</key>
+		<string>tab_businessCircle</string>
+		<key>showType</key>
+		<string>1</string>
+	</dict>
+	<dict>
+		<key>classString</key>
+		<string>LWBillViewController</string>
+		<key>titleString</key>
+		<string>订单</string>
+		<key>imageName</key>
+		<string>tab_billManage</string>
+		<key>showType</key>
+		<string>1</string>
+	</dict>
+	<dict>
+		<key>classString</key>
+		<string>LWMineViewController</string>
+		<key>titleString</key>
+		<string>我的</string>
+		<key>imageName</key>
+		<string>tab_businessMy</string>
+		<key>showType</key>
+		<string>1</string>
+	</dict>
+</array>
+</plist>

@@ -1,0 +1,24 @@
+//
+//  LWHomeViewController.swift
+//  Loter-swift
+//
+//  Created by 张星星 on 2018/4/2.
+//  Copyright © 2018年 LW. All rights reserved.
+//
+
+import UIKit
+
+class LWHomeViewController: LWBaseViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+       LWProgressHUD.showInfo(infoStr: "wwwww")
+        LWNetWorkingTool<LWCommonConfigModel>.getDataFromeServiceRequest(url: kURLAppCommonConfig, successBlock: { jsonModel  in
+            print(jsonModel?.servicePhone)
+        }) { (error) in
+            
+        }
+        
+    }
+
+}

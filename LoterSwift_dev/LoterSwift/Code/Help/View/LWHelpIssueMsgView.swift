@@ -225,10 +225,6 @@ class LWHelpIssueMsgView: UIView,UITextViewDelegate,LWPhotoAssetViewControllerDe
         
         issueModel.MsgTitle =  titleTextField.text!
         
-        
-        
-        
-        
         if let contentString = contentTextView.text {
             if contentString.count >= 6, contentString.count <= 300 {
                 issueModel.MsgContent = contentString

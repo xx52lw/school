@@ -209,7 +209,7 @@ class LWHelpIssueMsgView: UIView,UITextViewDelegate,LWPhotoAssetViewControllerDe
         if let moneyString = priceTextField.text {
             if moneyString.count > 0 {
                 if moneyString.count > 3 {
-                    LWProgressHUD.showInfo(infoStr: "请输入1~999")
+                    LWProgressHUD.showInfo(infoStr: "请输入正确金额在1~999之内")
                     return
                 }
                 else {

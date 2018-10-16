@@ -119,7 +119,7 @@
                                 <constraint firstAttribute="width" constant="16" id="Ezz-Pj-1dY"/>
                             </constraints>
                         </imageView>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ne-2S-6jC">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ne-2S-6jC">
                             <rect key="frame" x="120.5" y="50" width="254.5" height="50"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="50" id="5Au-By-4yz"/>
@@ -231,7 +231,7 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIG-wc-odJ">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uIG-wc-odJ">
                             <rect key="frame" x="115" y="16.5" width="80" height="17"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <state key="normal" title=" 1天" image="help_unselect">
@@ -242,7 +242,7 @@
                                 <action selector="timeBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="5Dd-2h-9nF"/>
                             </connections>
                         </button>
-                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ch4-rs-v3M">
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ch4-rs-v3M">
                             <rect key="frame" x="195" y="16.5" width="80" height="17"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <state key="normal" title=" 3天" image="help_unselect">
@@ -253,7 +253,7 @@
                                 <action selector="timeBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="T2E-gJ-o9S"/>
                             </connections>
                         </button>
-                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJM-Gz-A5b">
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EJM-Gz-A5b">
                             <rect key="frame" x="275" y="16.5" width="80" height="17"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <state key="normal" title=" 4天" image="help_unselect">
@@ -264,7 +264,7 @@
                                 <action selector="timeBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="2og-O1-so6"/>
                             </connections>
                         </button>
-                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Khn-F2-RbE">
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Khn-F2-RbE">
                             <rect key="frame" x="115" y="33.5" width="80" height="66.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <state key="normal" title=" 1小时" image="help_unselect">
@@ -275,7 +275,7 @@
                                 <action selector="timeBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="MvJ-xF-9Ba"/>
                             </connections>
                         </button>
-                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLd-vi-WAY">
+                        <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tLd-vi-WAY">
                             <rect key="frame" x="195" y="33.5" width="80" height="66.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <state key="normal" title=" 3小时" image="help_unselect">
@@ -286,7 +286,7 @@
                                 <action selector="timeBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="6Wr-8i-GcT"/>
                             </connections>
                         </button>
-                        <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LUg-LH-2Ma">
+                        <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LUg-LH-2Ma">
                             <rect key="frame" x="275" y="33.5" width="80" height="66.5"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <state key="normal" title=" 4小时" image="help_unselect">
@@ -344,7 +344,7 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7a-XP-9Fl">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7a-XP-9Fl">
                             <rect key="frame" x="195" y="16.5" width="80" height="17"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <state key="normal" title=" 显示" image="help_unselect">
@@ -362,7 +362,7 @@
                                 <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                             </state>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qnT-sI-clu">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qnT-sI-clu">
                             <rect key="frame" x="115" y="16.5" width="80" height="17"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <state key="normal" title=" 不显示" image="help_unselect">
@@ -407,7 +407,7 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1sR-02-EEJ">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1sR-02-EEJ">
                             <rect key="frame" x="195" y="16.5" width="80" height="17"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <state key="normal" title=" 显示" image="help_unselect">
@@ -425,7 +425,7 @@
                                 <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                             </state>
                         </button>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Txc-gS-20n">
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Txc-gS-20n">
                             <rect key="frame" x="115" y="16.5" width="80" height="17"/>
                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                             <state key="normal" title=" 不显示" image="help_unselect">

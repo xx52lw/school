@@ -10,7 +10,10 @@ import UIKit
 
 class LWProgressHUD: NSObject {
     /// 展示信息ing
-    class func show(infoStr : String) {
+    class func show(infoStr : String?) {
+        if infoStr == nil {
+            SVProgressHUD.show()
+        }
         return SVProgressHUD.show(withStatus: infoStr)
     }
    /// 展示信息

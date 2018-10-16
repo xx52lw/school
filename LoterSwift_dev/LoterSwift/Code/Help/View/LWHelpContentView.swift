@@ -11,6 +11,8 @@ import UIKit
 // MARK: - 帮助视图
 class LWHelpContentView: UIView {
 
+    var VC : UIViewController?
+    
     // MARK:样式
     /// 样式（默认悬赏）
     var viewType :LWHelpNavTitleViewType = .none
@@ -144,6 +146,13 @@ extension LWHelpContentView :UITableViewDelegate, UITableViewDataSource {
     // MARK: 选择cell
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
+        var model = LWHelpContentModel()
+        if cellArray.count > indexPath.row {
+            model = cellArray[indexPath.row]
+        }
+        let vc = LWHelpIssueContentDetailViewController()
+        vc.UserMsgID = model.UserMsgID
+        self.VC?.navigationController?.pushViewController(vc, animated: true)
     }
     
 }

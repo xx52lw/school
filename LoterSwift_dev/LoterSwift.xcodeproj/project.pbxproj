@@ -100,6 +100,10 @@
 		D0CD3BFD21521E3500099A09 /* LWTestModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0CD3BFC21521E3500099A09 /* LWTestModel.swift */; };
 		D0DA14AD2172EB5800541DD6 /* LWHelpContenteViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA14AC2172EB5800541DD6 /* LWHelpContenteViewCell.swift */; };
 		D0DA14AF2172F3B900541DD6 /* LWHelpContentListModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0DA14AE2172F3B900541DD6 /* LWHelpContentListModel.swift */; };
+		D0E600A02175D8060067CC7D /* LWHelpContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E6009F2175D8060067CC7D /* LWHelpContentDetailView.swift */; };
+		D0E600A22175D8190067CC7D /* LWHelpContentDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D0E600A12175D8190067CC7D /* LWHelpContentDetailView.xib */; };
+		D0E600A4217605720067CC7D /* LWHelpIssueContentDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E600A3217605720067CC7D /* LWHelpIssueContentDetailViewController.swift */; };
+		D0E600A62176091B0067CC7D /* LWHelpIssueContentDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E600A52176091B0067CC7D /* LWHelpIssueContentDetailModel.swift */; };
 		D5539CEB89C7BB2DC865F072 /* Pods_LoterSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EE8815735D58DF4FBF7C5798 /* Pods_LoterSwift.framework */; };
 /* End PBXBuildFile section */
 
@@ -240,6 +244,10 @@
 		D0CD3BFC21521E3500099A09 /* LWTestModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWTestModel.swift; sourceTree = "<group>"; };
 		D0DA14AC2172EB5800541DD6 /* LWHelpContenteViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWHelpContenteViewCell.swift; sourceTree = "<group>"; };
 		D0DA14AE2172F3B900541DD6 /* LWHelpContentListModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWHelpContentListModel.swift; sourceTree = "<group>"; };
+		D0E6009F2175D8060067CC7D /* LWHelpContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWHelpContentDetailView.swift; sourceTree = "<group>"; };
+		D0E600A12175D8190067CC7D /* LWHelpContentDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LWHelpContentDetailView.xib; sourceTree = "<group>"; };
+		D0E600A3217605720067CC7D /* LWHelpIssueContentDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWHelpIssueContentDetailViewController.swift; sourceTree = "<group>"; };
+		D0E600A52176091B0067CC7D /* LWHelpIssueContentDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWHelpIssueContentDetailModel.swift; sourceTree = "<group>"; };
 		EE8815735D58DF4FBF7C5798 /* Pods_LoterSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoterSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9FACFAE921D54DB982CAD6B /* Pods-LoterSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoterSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LoterSwift/Pods-LoterSwift.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -703,6 +711,7 @@
 				D0A54089217231EE00221A9C /* LWHelpViewController.swift */,
 				D0484AB421737A30000B34A8 /* LWHelpIssueContentViewController.swift */,
 				D03AD7CD217470B6008D6E45 /* LWHelpHaveIssueViewController.swift */,
+				D0E600A3217605720067CC7D /* LWHelpIssueContentDetailViewController.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -716,6 +725,8 @@
 				D0484AAE21733B1E000B34A8 /* LWHelpLeftNavView.swift */,
 				D0484AB2217370BE000B34A8 /* LWHelpIssueMsgView.swift */,
 				D0484AB021736443000B34A8 /* LWHelpIssueMsgView.xib */,
+				D0E6009F2175D8060067CC7D /* LWHelpContentDetailView.swift */,
+				D0E600A12175D8190067CC7D /* LWHelpContentDetailView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -725,6 +736,7 @@
 			children = (
 				D0DA14AE2172F3B900541DD6 /* LWHelpContentListModel.swift */,
 				D03AD7C72174529B008D6E45 /* LWHelpIssueContentModel.swift */,
+				D0E600A52176091B0067CC7D /* LWHelpIssueContentDetailModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -807,6 +819,7 @@
 				D0484AB121736443000B34A8 /* LWHelpIssueMsgView.xib in Resources */,
 				D0318D3A2071D127004F295E /* Assets.xcassets in Resources */,
 				D0484AC921738824000B34A8 /* LWPhotoAssetImage.bundle in Resources */,
+				D0E600A22175D8190067CC7D /* LWHelpContentDetailView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -873,11 +886,13 @@
 				D0318D792071D196004F295E /* UIImage+LW.swift in Sources */,
 				D0318D7B2071D196004F295E /* LWNetWorkingTool.swift in Sources */,
 				D0484AB3217370BE000B34A8 /* LWHelpIssueMsgView.swift in Sources */,
+				D0E600A02175D8060067CC7D /* LWHelpContentDetailView.swift in Sources */,
 				D0318D842071D55C004F295E /* LWServiceDefinition.swift in Sources */,
 				D0A4947D20E47CB9001DF5FC /* LWTimerManageTool.swift in Sources */,
 				D0318DE120732CAD004F295E /* UIScrollView+MJRefresh.m in Sources */,
 				D06F17F8213CD779007F3462 /* LWTextField.swift in Sources */,
 				D0318DFA20732CAD004F295E /* MJRefreshComponent.m in Sources */,
+				D0E600A4217605720067CC7D /* LWHelpIssueContentDetailViewController.swift in Sources */,
 				D0DA14AD2172EB5800541DD6 /* LWHelpContenteViewCell.swift in Sources */,
 				D0318DEB20732CAD004F295E /* NSBundle+MJRefresh.m in Sources */,
 				D017F373215E0829001A9DD2 /* LWListenNetworkTool.swift in Sources */,
@@ -902,6 +917,7 @@
 				D0484AC821738824000B34A8 /* LWAssetHelper.m in Sources */,
 				D0CD3BFD21521E3500099A09 /* LWTestModel.swift in Sources */,
 				D0484AC621738824000B34A8 /* LWAssetCollectionViewCell.m in Sources */,
+				D0E600A62176091B0067CC7D /* LWHelpIssueContentDetailModel.swift in Sources */,
 				D0484AC721738824000B34A8 /* LWPhotoBrowseCollectionViewCell.m in Sources */,
 				D0318DF620732CAD004F295E /* MJRefreshFooter.m in Sources */,
 				D0318DEC20732CAD004F295E /* UIView+MJExtension.m in Sources */,

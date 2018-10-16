@@ -107,9 +107,11 @@ extension LWHelpViewController {
 
         navigationItem.leftBarButtonItem = UIBarButtonItem.init(customView: leftNavView)
 //        navigationItem.leftBarButtonItem = UIBarButtonItem.init(image: leftImage, style: .plain, target: self, action: #selector(leftNavClick))
-
+        fetchView.VC = self
         scrollerView.addSubview(fetchView)
+        rewardView.VC = self
         scrollerView.addSubview(rewardView)
+        sellView.VC = self
         scrollerView.addSubview(sellView)
         self.view.addSubview(scrollerView)
         self.perform(#selector(reloadView), with: self, afterDelay: 0.25)
